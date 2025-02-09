@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid white; */
+}
+
+:root{
+    --textColor: #FCFCFA;
+    --highlight: #CA3538;
+    --biggerFont: 70px;
+}
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-color: #0C0B08;
+    color: var(--textColor);
+    height: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* Navbar */
+.navbar{
+    padding: 0 5rem 0 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 1px  rgb(91, 91, 91);
+}
+.navbar a {
+    text-decoration: none;
+    color: var(--textColor);
+}
+.navbar a h1{
+    color: var(--highlight);
+}
+nav{
+    width: 30%;
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+.navbar ul li{
+    cursor: pointer;
+    transition: ease-in .2s;
+}
+
+.navBtn{
+    width: 6rem;
+    height: 3rem;
+    color: var(--highlight);
+    background-color: #0C0B08;
+    border: 1px solid var(--highlight);
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: ease-out .3s;
+}
+.navBtn:hover{
+    background-color: antiquewhite;
+}
+
+/* Hero Section */
+.hero{
+    height: calc(100vh - 5rem);
+    padding: 5rem;
+    align-content: center;
+}
+.heroContainer{
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.heroText,.heroImg{
+    height: 70%;
+    display: flex;
+    align-items: normal;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+.heroText h1{
+    font-size: var(--biggerFont);
+    width: fit-content;
+}
+span{
+    line-height: 1;
+}
+.heroText .name{
+    font-family: fantasy;
+    color: var(--highlight);
+}
+.heroText p{
+    margin-top: 10px;
+    width: 80%;
+}
+.heroImg{
+    height: 80%;
+}
+.heroImg img{
+    height: inherit;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.resumeBtn{
+    margin-top: 1.5rem;
+    height: 4rem;
+    width: 20%;
+    background-color: var(--highlight);
+    color: var(--textColor);
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Profile Box */
+.profiles{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.profile {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #171513;
+    color: #8B8B8D;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    font-size: 11px;
+    transition: ease .5s;
+    cursor: pointer;
+}
+.profile:hover{
+    transform: translate(2px, -2px);
+}
+.profile{
+    text-decoration: none;
+}
+.profile span{
+    line-height: 1.4;
+}
+.profile span p:first-child{
+    font-weight: bolder;
+}
+
+/* Projects Section  */
+
+.sectionTitle{
+    padding: 2rem 0;
+    width: 100%;
+    align-content: center;
+    justify-items: center;
+}
+.sectionTitle h1{
+    color: var(--textColor);
+    font-size: 3rem;
+}
+.projectSection{
+    width: 100%;
+    height: 90vh;
+    background-color: #131313;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.projectContainer{
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+.project{
+    padding: 2rem 3rem;
+    width: 400px;
+    height: 200px;
+    background-color: #1A1A1A;
+    border-radius: 5px;
+}
+.project:first-child{
+    margin-bottom: 3rem;
+}
+.project, .project span{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-around;
+}
+.project span{
+    gap: 1rem;
+    
+}
+.projectDesc{
+    color: #8B8B8D;
+}
+.project a{
+    width: fit-content;
+    /* padding: .5rem 2rem; */
+    text-decoration: none;
+    color: var(--highlight);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: ease .3s;
+}
+.project a:hover{
+    transform: translateX(2px);
+}
+
+/* Contact Section */
+.contact{
+    width: 100%;
+    background-color: #131313;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contactContainer{
+    width: 60%;
+    height: 20vh;
+    align-content: center;
+    justify-items: center;
+}
+
+
+/* Footer */
+footer{
+    height: 10vh;
+    align-content: center;
+    justify-items: center;
+}
